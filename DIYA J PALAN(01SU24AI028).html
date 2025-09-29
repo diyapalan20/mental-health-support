@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR MENTAL HEALTH COMPANIOIN(DIYA HERE)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5; /* Soft gray for a clean look */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/hero-bg.jpg'); /* Your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff; /* White text for contrast */
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(66, 103, 178, 0.7); /* Cerulean blue with opacity */
+        }
+
+        .hero-content {
+            z-index: 1; /* Puts content on top of the overlay */
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #8FBC8F; /* Serene green for the button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #7AA67A; /* Darker green on hover */
+        }
+
+        /* Main Content Section */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #4267B2;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4267B2;
+            color: #fff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>YOUR  MENTAL  HELATH  COMPANION🤖</h1>
+            <p>A trusted space for self-care and well-being. We're here to listen, support, and provide helpful resources whenever you need them.</p>
+            <a href="#" class="cta-button">Get Started Now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>What We Offer</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>💬 Confidential Chat</h3>
+                <p>Talk to our bot anytime, anywhere. Your conversations are private and secure.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧘 Guided Meditations</h3>
+                <p>Access a library of meditations to help you relax, focus, and find inner calm.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📘 Coping Strategies</h3>
+                <p>Discover practical techniques and exercises to manage stress and anxiety.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 IBM Cloud Mental Health Project. All rights reserved.</p>
+    </footer>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "e778743e-934f-4f21-9174-22b4c3e4b8eb", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "34da8ad1-0123-40c4-ab66-0302b4be6c09", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
